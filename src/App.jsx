@@ -1,7 +1,12 @@
-import Pages from "./pages/Pages"
+import PageContent from "./pages/PageContent"
+import Sidebar from "./components/Sidebar"
+
 function App() {
   return (
-    <Pages />
+    <>
+      <Sidebar />
+      <PageContent />
+    </>
   )
 }
 
