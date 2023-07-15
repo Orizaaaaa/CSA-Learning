@@ -21459,6 +21459,11 @@ body .bi:before {
     background-color: #f0f1f5
 }
 
+.sidebar-wrapper .menu .sidebar-link.active {
+    background-color: #435ebe;
+    color: #fff;
+}
+
 .sidebar-wrapper .menu .sidebar-item {
     list-style: none;
     margin-top: .5rem;
@@ -21478,19 +21483,10 @@ body .bi:before {
     content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path style="fill:none;stroke:%23fff;stroke-width:1" d="m6 9 6 6 6-6"/></svg>')
 }
 
-.sidebar-wrapper .menu .sidebar-item.active>.sidebar-link {
-    background-color: #435ebe
-}
 
-.sidebar-wrapper .menu .sidebar-item.active>.sidebar-link span {
-    color: #fff
-}
 
-.sidebar-wrapper .menu .sidebar-item.active>.sidebar-link i,
-.sidebar-wrapper .menu .sidebar-item.active>.sidebar-link svg {
-    fill: #fff;
-    color: #fff
-}
+
+
 
 .sidebar-wrapper .menu .sidebar-item.active>.sidebar-link.has-sub:after {
     content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path style="fill:none;stroke:%23fff;stroke-width:1" d="m6 9 6 6 6-6"/></svg>')

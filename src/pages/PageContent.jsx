@@ -150,7 +150,7 @@ function PageContent() {
                                                         <td className="col-3">
                                                             <div className="d-flex align-items-center">
                                                                 <div className="avatar avatar-md">
-                                                                    <img src="assets/images/faces/5.jpg" />
+
                                                                 </div>
                                                                 <p className="font-bold ms-3 mb-0">Si Cantik</p>
                                                             </div>
@@ -163,7 +163,7 @@ function PageContent() {
                                                         <td className="col-3">
                                                             <div className="d-flex align-items-center">
                                                                 <div className="avatar avatar-md">
-                                                                    <img src="assets/images/faces/2.jpg" />
+
                                                                 </div>
                                                                 <p className="font-bold ms-3 mb-0">Si Ganteng</p>
                                                             </div>
@@ -187,7 +187,7 @@ function PageContent() {
                             <div className="card-body py-4 px-4">
                                 <div className="d-flex align-items-center">
                                     <div className="avatar avatar-xl">
-                                        <img src="assets/images/faces/1.jpg" alt="Face 1" />
+
                                     </div>
                                     <div className="ms-3 name">
                                         <h5 className="font-bold">John Duck</h5>
@@ -203,7 +203,7 @@ function PageContent() {
                             <div className="card-content pb-4">
                                 <div className="recent-message d-flex px-4 py-3">
                                     <div className="avatar avatar-lg">
-                                        <img src="assets/images/faces/4.jpg" />
+
                                     </div>
                                     <div className="name ms-4">
                                         <h5 className="mb-1">Hank Schrader</h5>
@@ -212,7 +212,7 @@ function PageContent() {
                                 </div>
                                 <div className="recent-message d-flex px-4 py-3">
                                     <div className="avatar avatar-lg">
-                                        <img src="assets/images/faces/5.jpg" />
+
                                     </div>
                                     <div className="name ms-4">
                                         <h5 className="mb-1">Dean Winchester</h5>
@@ -221,7 +221,7 @@ function PageContent() {
                                 </div>
                                 <div className="recent-message d-flex px-4 py-3">
                                     <div className="avatar avatar-lg">
-                                        <img src="assets/images/faces/1.jpg" />
+
                                     </div>
                                     <div className="name ms-4">
                                         <h5 className="mb-1">John Dodol</h5>

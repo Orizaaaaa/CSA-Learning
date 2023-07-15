@@ -1,8 +1,8 @@
 import { Justify } from "react-bootstrap-icons"
 function Header(props) {
     return (
-        <>
-            <header className="mb-3">
+        <div id="main">
+            <header className="mb-1">
                 <a onClick={() => changeXvalue()} href="#" className="burger-btn d-block d-xl-none ">
                     <Justify />
                 </a>
@@ -15,7 +15,7 @@ function Header(props) {
             </div>
 
 
-        </>
+        </div>
     )
 }
 export default Header

@@ -6,8 +6,11 @@ import { Image } from 'react-bootstrap-icons';
 import { PersonBadge } from 'react-bootstrap-icons';
 import { Basket } from 'react-bootstrap-icons';
 import { X } from 'react-bootstrap-icons';
+import Header from './Header';
 import { useState } from 'react';
 import logo from '../assets/img/logo.svg'
+import { NavLink } from 'react-router-dom';
+
 
 
 function Sidebar() {
@@ -69,17 +72,17 @@ function Sidebar() {
                             <li className="sidebar-title">Menu</li>
 
                             <li className="sidebar-item active ">
-                                <a href="index.html" className='sidebar-link'>
+                                <NavLink to="/PageContent" className='sidebar-link'>
                                     <Speedometer2 />
                                     <span>Dashboard</span>
-                                </a>
+                                </NavLink>
                             </li>
 
                             <li className="sidebar-item  ">
-                                <a href="application-email.html" className='sidebar-link' to='/Email'>
+                                <NavLink to="/EmailAplication" className='sidebar-link' >
                                     <Envelope />
                                     <span>Email Application</span>
-                                </a>
+                                </NavLink>
                             </li>
 
                             <li className="sidebar-item  ">
@@ -126,6 +129,7 @@ function Sidebar() {
                     </div>
                 </div>
             </div>
+            <Header />
         </div>
     )
 }
