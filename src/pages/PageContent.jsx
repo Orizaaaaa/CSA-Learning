@@ -1,6 +1,8 @@
+import Header from "../components/Header"
 function PageContent() {
     return (
         <div id="main" >
+            <Header />
             <div className="page-content">
                 <section className="row">
                     <div className="col-12 col-lg-9">

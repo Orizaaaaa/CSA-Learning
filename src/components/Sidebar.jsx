@@ -10,21 +10,19 @@ import Header from './Header';
 import { useState } from 'react';
 import logo from '../assets/img/logo.svg'
 import { NavLink } from 'react-router-dom';
+import useSidebarState from './useSidebarState';
 
 
 
 function Sidebar() {
 
-    const [getXvalue, setXvalue] = useState('active')
+    const { Xvalue, toggleXvalue } = useSidebarState();
 
-    const changeXvalue = () => {
-        setXvalue(' active d-none')
-    }
 
 
     return (
         <div id="app">
-            <div id="sidebar" className={getXvalue}  >
+            <div id="sidebar" className={Xvalue}  >
                 <div className="sidebar-wrapper active ">
                     <div className="sidebar-header position-relative">
                         <div className="d-flex justify-content-between align-items-center">
@@ -62,7 +60,7 @@ function Sidebar() {
                             </div>
 
                             <div className="sidebar-toggler  x" >
-                                <a onClick={() => changeXvalue()} href="#" className="sidebar-hide d-xl-none d-block"><X /></a>
+                                <a onClick={() => toggleXvalue()} href="#" className="sidebar-hide d-xl-none d-block"><X /></a>
                             </div>
                         </div>
                     </div>
@@ -129,7 +127,6 @@ function Sidebar() {
                     </div>
                 </div>
             </div>
-            <Header />
         </div>
     )
 }
