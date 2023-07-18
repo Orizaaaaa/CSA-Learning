@@ -1,675 +1,228 @@
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 300;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-300-normal.woff2?bdea52a97975fe3b5a913b4103780c1b) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c) format("woff");
-    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 300;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-300-normal.woff2?3cf1ea4958e9e18a6eba61a695f548f2) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c) format("woff");
-    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 300;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-300-normal.woff2?dfa31d492c43807b27c29c50bdc1688b) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c) format("woff");
-    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 300;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-300-normal.woff2?efc4195dbb895ec1985c7be44326bd63) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c) format("woff");
-    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 300;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-300-normal.woff2?b910844d7a322238ec945d43a31a7050) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c) format("woff");
-    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-400-normal.woff2?f21ac09511c6fa4f94633549c5716665) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e) format("woff");
-    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-400-normal.woff2?a0473b5006c28d8a449913aaab9e225d) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e) format("woff");
-    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-400-normal.woff2?6a8bc7acd205391fb71a9326938d6b63) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e) format("woff");
-    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-400-normal.woff2?e8049e65c49ce687cff1bf71dfa6a5d0) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e) format("woff");
-    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 400;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-400-normal.woff2?b8644b6e04ecda1cf98bbb37f17d0ef3) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e) format("woff");
-    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-600-normal.woff2?a966a96b5f86c1790d611dc2a071f533) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09) format("woff");
-    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-600-normal.woff2?1dd32244f44e3237f333f099fbb9e7b5) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09) format("woff");
-    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-600-normal.woff2?73867bf9b4b837f997c48e82ec28616a) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09) format("woff");
-    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-600-normal.woff2?9704ee910d46b3c17e69dce6da1b19a3) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09) format("woff");
-    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-600-normal.woff2?2b48b7fe12163661f95ab32aebeaed01) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09) format("woff");
-    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 700;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-700-normal.woff2?6f62b8277e1be35439a6f146e35525c3) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b) format("woff");
-    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 700;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-700-normal.woff2?d30bbf13744f76549350b999396205c8) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b) format("woff");
-    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 700;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-700-normal.woff2?8862ea6993677ed0a88f2f310121476b) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b) format("woff");
-    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 700;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-700-normal.woff2?4bcdf80378aecff12c8d67cfc4164cf6) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b) format("woff");
-    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 700;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-700-normal.woff2?adfd120897fcd366e78e43a700ca8bfc) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b) format("woff");
-    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-800-normal.woff2?7931b4451e85184334d5e5ad03c2e1b1) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c) format("woff");
-    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-800-normal.woff2?da7d3180b2807d20f628c3fef69a047b) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c) format("woff");
-    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-800-normal.woff2?1911355e3ea73b1cce95fe7de940eb72) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c) format("woff");
-    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-800-normal.woff2?612cd00048b57f272c0046c7349e1c1b) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c) format("woff");
-    unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
-}
-
-@font-face {
-    font-display: swap;
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 800;
-    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-800-normal.woff2?de4064435bf0f21e81104a7f39c75527) format("woff2"), url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c) format("woff");
-    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
-}
-
-.ps {
-    -ms-overflow-style: none;
-    overflow: hidden !important;
-    overflow-anchor: none;
-    touch-action: auto;
-    -ms-touch-action: auto
-}
-
-.ps__rail-x {
-    bottom: 0;
-    height: 15px
-}
-
-.ps__rail-x,
-.ps__rail-y {
-    display: none;
-    opacity: 0;
-    position: absolute;
-    transition: background-color .2s linear, opacity .2s linear;
-    -webkit-transition: background-color .2s linear, opacity .2s linear
-}
-
-.ps__rail-y {
-    right: 0;
-    width: 15px
-}
-
-.ps--active-x>.ps__rail-x,
-.ps--active-y>.ps__rail-y {
-    background-color: transparent;
-    display: block
-}
-
-.ps--focus>.ps__rail-x,
-.ps--focus>.ps__rail-y,
-.ps--scrolling-x>.ps__rail-x,
-.ps--scrolling-y>.ps__rail-y,
-.ps:hover>.ps__rail-x,
-.ps:hover>.ps__rail-y {
-    opacity: .6
-}
-
-.ps .ps__rail-x.ps--clicking,
-.ps .ps__rail-x:focus,
-.ps .ps__rail-x:hover,
-.ps .ps__rail-y.ps--clicking,
-.ps .ps__rail-y:focus,
-.ps .ps__rail-y:hover {
-    background-color: #eee;
-    opacity: .9
-}
-
-.ps__thumb-x {
-    bottom: 2px;
-    height: 6px;
-    transition: background-color .2s linear, height .2s ease-in-out;
-    -webkit-transition: background-color .2s linear, height .2s ease-in-out
-}
-
-.ps__thumb-x,
-.ps__thumb-y {
-    background-color: #aaa;
-    border-radius: 6px;
-    position: absolute
-}
-
-.ps__thumb-y {
-    right: 2px;
-    transition: background-color .2s linear, width .2s ease-in-out;
-    -webkit-transition: background-color .2s linear, width .2s ease-in-out;
-    width: 6px
-}
-
-.ps__rail-x.ps--clicking .ps__thumb-x,
-.ps__rail-x:focus>.ps__thumb-x,
-.ps__rail-x:hover>.ps__thumb-x {
-    background-color: #999;
-    height: 11px
-}
-
-.ps__rail-y.ps--clicking .ps__thumb-y,
-.ps__rail-y:focus>.ps__thumb-y,
-.ps__rail-y:hover>.ps__thumb-y {
-    background-color: #999;
-    width: 11px
-}
-
-@supports (-ms-overflow-style:none) {
-    .ps {
-        overflow: auto !important
-    }
-}
-
-@media (-ms-high-contrast:none),
-screen and (-ms-high-contrast:active) {
-    .ps {
-        overflow: auto !important
-    }
-}
-
-*,
-:after,
-:before {
-    box-sizing: border-box
-}
-
-@media (prefers-reduced-motion:no-preference) {
-    :root {
-        scroll-behavior: smooth
-    }
-}
-
-body {
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: var(--bs-body-bg);
-    color: var(--bs-body-color);
-    font-family: var(--bs-body-font-family);
-    font-size: var(--bs-body-font-size);
-    font-weight: var(--bs-body-font-weight);
-    line-height: var(--bs-body-line-height);
-    margin: 0;
-    text-align: var(--bs-body-text-align)
-}
-
-
-
-@media (min-width:1200px) {
-
-    .h1,
-    h1 {
-        font-size: 2.5rem
-    }
-}
-
-.h2,
-h2 {
-    font-size: calc(1.325rem + .9vw)
-}
-
-@media (min-width:1200px) {
-
-    .h2,
-    h2 {
-        font-size: 2rem
-    }
-}
-
-.h3,
-h3 {
-    font-size: calc(1.3rem + .6vw)
-}
-
-@media (min-width:1200px) {
-
-    .h3,
-    h3 {
-        font-size: 1.75rem
-    }
-}
-
-.h4,
-h4 {
-    font-size: calc(1.275rem + .3vw)
-}
-
-@media (min-width:1200px) {
-
-    .h4,
-    h4 {
-        font-size: 1.5rem
-    }
-}
-
-.h5,
-h5 {
-    font-size: 1.25rem
-}
-
-.h6,
-h6 {
-    font-size: 1rem
-}
-
-p {
-    margin-bottom: 1rem;
-    margin-top: 0
-}
-
-
-
-
-
-@media (min-width:576px) {
-
-    .container,
-    .container-sm {
-        max-width: 540px
-    }
-}
-
-@media (min-width:768px) {
-
-    .container,
-    .container-md,
-    .container-sm {
-        max-width: 720px
-    }
-}
-
-@media (min-width:992px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm {
-        max-width: 960px
-    }
-}
-
-@media (min-width:1200px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1140px
-    }
-}
-
-@media (min-width:1400px) {
-
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl,
-    .container-xxl {
-        max-width: 1320px
-    }
-}
-
-
-#sidebar.active .sidebar-wrapper {
-    left: 0
-}
-
-#sidebar:not(.active) .sidebar-wrapper {
-    left: -300px
-}
-
-#sidebar:not(.active)~#main {
-    margin-left: 0
-}
-
-.sidebar-wrapper {
-    background-color: #fff;
-    bottom: 0;
-    height: 100vh;
-    overflow-y: auto;
-    position: fixed;
-    top: 0;
-    transition: left .5s ease-out;
-    width: 300px;
-    z-index: 10
-}
-
-.sidebar-wrapper .sidebar-header {
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 2rem 2rem 1rem
-}
-
-.sidebar-wrapper .sidebar-header img {
-    height: 1.2rem
-}
-
-.sidebar-wrapper .sidebar-toggler.x {
-    display: none;
-    position: absolute;
-    right: 1.75rem;
-    top: .25rem
-}
-
-.sidebar-wrapper .menu {
-    font-weight: 600;
-    margin-top: 2rem;
-    padding: 0 2rem
-}
-
-.sidebar-wrapper .menu .sidebar-title {
-    color: #25396f;
-    font-size: 1rem;
-    font-weight: 600;
-    list-style: none;
-    margin: 1.5rem 0 1rem;
-    padding: 0 1rem
-}
-
-.sidebar-wrapper .menu .sidebar-link {
-    align-items: center;
-    border-radius: .5rem;
-    color: #25396f;
-    display: block;
-    display: flex;
-    font-size: 1rem;
-    padding: .7rem 1rem;
-    text-decoration: none;
-    transition: all .5s
-}
-
-.sidebar-wrapper .menu .sidebar-link i,
-.sidebar-wrapper .menu .sidebar-link svg {
-    color: #7c8db5
-}
-
-.sidebar-wrapper .menu .sidebar-link i:before {
-    vertical-align: top
-}
-
-.sidebar-wrapper .menu .sidebar-link span {
-    margin-left: 1rem
-}
-
-.sidebar-wrapper .menu .sidebar-link:hover {
-    background-color: #f0f1f5
-}
-
-.sidebar-wrapper .menu .sidebar-link.active {
-    background-color: #435ebe;
-    color: #fff;
-}
-
-.sidebar-wrapper .menu .sidebar-item {
-    list-style: none;
-    margin-top: .5rem;
-    position: relative
-}
-
-.sidebar-wrapper .menu .sidebar-item.has-sub .sidebar-link:after {
-    color: #ccc;
-    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path style="fill:none;stroke:gray;stroke-width:1" d="m6 9 6 6 6-6"/></svg>');
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 12px
-}
-
-.sidebar-wrapper .menu .sidebar-item.active.has-sub .sidebar-link:after {
-    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path style="fill:none;stroke:%23fff;stroke-width:1" d="m6 9 6 6 6-6"/></svg>')
-}
-
-.sidebar-wrapper .menu .sidebar-item.active>.sidebar-link.has-sub:after {
-    content: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><path style="fill:none;stroke:%23fff;stroke-width:1" d="m6 9 6 6 6-6"/></svg>')
-}
-
-.sidebar-wrapper .menu .submenu {
-    display: none;
-    list-style: none;
-    overflow: hidden;
-    transition: max-height 2s cubic-bezier(0, .55, .45, 1)
-}
-
-.sidebar-wrapper .menu .submenu.active {
-    display: block;
-    max-height: 999px
-}
-
-.sidebar-wrapper .menu .submenu .submenu-item.active {
-    position: relative
-}
-
-.sidebar-wrapper .menu .submenu .submenu-item.active>a {
-    color: #435ebe;
-    font-weight: 700
-}
-
-.sidebar-wrapper .menu .submenu .submenu-item a {
-    color: #25396f;
-    display: block;
-    font-size: .85rem;
-    font-weight: 600;
-    letter-spacing: .5px;
-    padding: .7rem 2rem;
-    transition: all .3s
-}
-
-.sidebar-wrapper .menu .submenu .submenu-item a:hover {
-    color: #435ebe;
-    margin-left: .3rem
-}
-
-.sidebar-backdrop {
-    background-color: rgba(0, 0, 0, .5);
-    height: 100%;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9
-}
-
-@media screen and (max-width:1199px) {
-    .sidebar-wrapper {
-        left: -300px;
-        position: absolute
-    }
-
-    .sidebar-wrapper .sidebar-toggler.x {
-        display: block
-    }
-}
-
-
-@media (max-width:767px) {
-    .stats-icon {
-        float: left;
-        margin-bottom: .4rem
-    }
-}
-
-.burger-btn {
-    display: none
-}
-
-#main {
-    margin-left: 300px;
-    padding: 2rem
-}
-
-@media screen and (max-width:1199px) {
-    #main {
-        margin-left: 0
-    }
-}
-
-#main.layout-navbar {
-    padding: 0;
-    transition: margin-left .5s ease-out
-}
-
-#main.layout-horizontal {
-    margin: 0;
-    padding: 0
-}
-
-#main #main-content {
-    padding: 2rem
-}
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+  html {
+      background-color: #1F1F1F;
+
+  }
+
+  *,
+
+  :after,
+  :before {
+      box-sizing: border-box
+  }
+
+  @media (prefers-reduced-motion:no-preference) {
+      :root {
+          scroll-behavior: smooth
+      }
+  }
+
+  body {
+      margin: 0;
+
+  }
+
+
+  #sidebar.active .sidebar-wrapper {
+      left: 0
+  }
+
+  #sidebar:not(.active) .sidebar-wrapper {
+      left: -300px
+  }
+
+  #sidebar:not(.active)~#main {
+      margin-left: 0;
+
+  }
+
+  .sidebar-wrapper {
+      background-color: #1A1A1A;
+      bottom: 0;
+      height: 100vh;
+      overflow-y: auto;
+      position: fixed;
+      top: 0;
+      transition: left .5s ease-out;
+      width: 300px;
+      z-index: 10;
+      font-family: 'Inter', sans-serif;
+
+  }
+
+  .sidebar-wrapper .sidebar-header .csaLogo img {
+      width: 200px;
+      height: 80px;
+  }
+
+  .sidebar-wrapper .sidebar-header {
+      font-size: 2rem;
+      padding: 2rem 2rem 1rem
+  }
+
+  .sidebar-wrapper .sidebar-header img {
+      height: 1.2rem
+  }
+
+  .sidebar-wrapper .sidebar-toggler.x {
+      display: none;
+      position: absolute;
+      right: 1.75rem;
+      top: .25rem
+  }
+
+  .sidebar-wrapper .menu {
+      margin-top: 2rem;
+      padding: 0 2rem
+  }
+
+  .sidebar-wrapper .menu .sidebar-title {
+      color: #25396f;
+      font-size: 1rem;
+      font-weight: 600;
+      list-style: none;
+      margin: 1.5rem 0 1rem;
+      padding: 0 1rem
+  }
+
+  .sidebar-wrapper .menu .sidebar-link {
+      align-items: center;
+      border-radius: .5rem;
+      color: #808191;
+      display: block;
+      display: flex;
+      font-size: 1rem;
+      padding: .7rem 1rem;
+      text-decoration: none;
+      transition: all .5s
+  }
+
+  .sidebar-wrapper .menu .sidebar-link i,
+  .sidebar-wrapper .menu .sidebar-link svg {
+      color: #7c8db5
+  }
+
+  .sidebar-wrapper .menu .sidebar-link i:before {
+      vertical-align: top
+  }
+
+  .sidebar-wrapper .menu .sidebar-link span {
+      margin-left: 1rem
+  }
+
+  .sidebar-wrapper .menu .sidebar-link:hover {
+      background-color: #7d90db
+  }
+
+  .sidebar-wrapper .menu .sidebar-link.active {
+      background-color: #435ebe;
+      color: #fff;
+  }
+
+
+
+  .sidebar-wrapper .menu .sidebar-item {
+      list-style: none;
+      margin-top: .5rem;
+      position: relative
+  }
+
+
+
+
+  .sidebar-wrapper .menu .submenu {
+      display: none;
+      list-style: none;
+      overflow: hidden;
+      transition: max-height 2s cubic-bezier(0, .55, .45, 1)
+  }
+
+  .sidebar-wrapper .menu .submenu.active {
+      display: block;
+      max-height: 999px
+  }
+
+  .sidebar-wrapper .menu .submenu .submenu-item.active {
+      position: relative
+  }
+
+
+
+  .sidebar-wrapper .menu .submenu .submenu-item a {
+      color: #808191;
+      display: block;
+      font-size: .85rem;
+      font-weight: 600;
+      letter-spacing: .5px;
+      padding: .7rem 2rem;
+      transition: all .3s
+  }
+
+  .sidebar-wrapper .menu .submenu .submenu-item a:hover {
+      color: #808191;
+      margin-left: .3rem
+  }
+
+  .sidebar-backdrop {
+      background-color: rgba(0, 0, 0, .5);
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 9
+  }
+
+  @media screen and (max-width:1199px) {
+      .sidebar-wrapper {
+          left: -300px;
+          position: absolute
+      }
+
+      .sidebar-wrapper .sidebar-toggler.x {
+          display: block
+      }
+  }
+
+
+  @media (max-width:767px) {
+      .stats-icon {
+          float: left;
+          margin-bottom: .4rem
+      }
+  }
+
+  .burger-btn {
+      display: none
+  }
+
+
+  #main {
+      margin-left: 300px;
+      padding: 2rem;
+      background-color: #1F1F1F;
+      color: #FFFFFF;
+
+
+  }
+
+  @media screen and (max-width:1199px) {
+      #main {
+          margin-left: 0
+      }
+  }
+
+  #main.layout-navbar {
+      padding: 0;
+      transition: margin-left .5s ease-out
+  }
+
+  #main.layout-horizontal {
+      margin: 0;
+      padding: 0
+  }
+
+  #main #main-content {
+      padding: 2rem
+  }
