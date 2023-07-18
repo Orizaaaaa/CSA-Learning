@@ -13,3 +13,7 @@
     font-family: 'Poppins', sans-serif;
     margin-top: 40px;
 }
+
+.page-content .row .card {
+    width: 180px;
+}
