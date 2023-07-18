@@ -15,5 +15,9 @@
 }
 
 .page-content .row .card {
-    width: 180px;
+    width: 160px;
+}
+
+.page-content .row .learningPath {
+    width: 800px;
 }

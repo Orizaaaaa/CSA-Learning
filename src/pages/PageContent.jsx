@@ -37,7 +37,7 @@ function PageContent() {
                         </div>
                     </div>
 
-                    <div className="row">
+                    <div className="row learningPath">
                         <h5 className="mt-5" >Your learning path</h5>
                         <div className="col">
                             <div class="card">
@@ -71,6 +71,7 @@ function PageContent() {
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </section>
             </div>
