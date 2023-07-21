@@ -2,10 +2,17 @@
 
 
 .page-content .row .caraosel {
-    width: 700px;
+    width: 650px;
+    height: 420px;
     background-color: #3F8CFF;
     padding: 30px;
     border-radius: 50px;
+}
+
+
+
+.page-content .row .caraosel .innercaraosel img {
+    width: 300px;
 }
 
 .page-content .row .caraosel .innercaraosel aside {
@@ -14,10 +21,47 @@
     margin-top: 40px;
 }
 
-.page-content .row .card {
-    width: 160px;
-}
-
 .page-content .row .learningPath {
     width: 800px;
+
+}
+
+.page-content .row .container .col {
+    width: 230px;
+
+}
+
+.page-content .row .lerningcard {
+    background-color: #242731;
+    color: #ffff;
+    height: 210px;
+    width: 210px;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.page-content .row .lerningcard p {
+    color: #808191;
+}
+
+.page-content .row .lerningcard .mt-4 img:nth-child(2) {
+    margin-left: 67px;
+}
+
+.page-content .row .lerningcard .mt-4 button {
+    background-color: transparent;
+    border: none;
+}
+
+
+.page-content .row .col .coursecard {
+    height: 70px;
+    background-color: #242731;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.page-content .row .col .coursecard img {
+    width: 40px;
+    height: 40px;
 }
