@@ -1,6 +1,7 @@
 import PageContent from "./pages/PageContent"
 import EmailAplication from "./pages/EmailAplication";
-import Sidebar from "./components/Sidebar"
+import Sidebar from "./pages/Sidebar"
+import Course from "./pages/Course";
 import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route path="/" element={<PageContent />} />
         <Route path="/PageContent" element={<PageContent />} />
         <Route path="/EmailAplication" element={<EmailAplication />} />
-
+        <Route path="/Course" element={<Course />} />
       </Routes>
     </>
   )

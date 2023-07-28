@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap');
 
+#main .openClose {
+    width: 25px;
+    height: 25px;
+    color: #3F8CFF;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
 
+/* Caraosel */
 .page-content .row .caraosel {
-    width: 650px;
+    width: 750px;
     height: 420px;
     background-color: #3F8CFF;
     padding: 30px;
     border-radius: 50px;
 }
-
-
 
 .page-content .row .caraosel .innercaraosel img {
     width: 300px;
@@ -21,15 +27,16 @@
     margin-top: 40px;
 }
 
-.page-content .row .learningPath {
-    width: 800px;
-
-}
-
 .page-content .row .container .col {
     width: 230px;
 
 }
+
+/* Caraosel End */
+
+
+/* Learning Card */
+
 
 .page-content .row .lerningcard {
     background-color: #242731;
@@ -54,14 +61,45 @@
 }
 
 
+
+
+
+
+/* Learning Card End */
+
+
+/* Course Progres */
 .page-content .row .col .coursecard {
     height: 70px;
     background-color: #242731;
     padding: 10px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .page-content .row .col .coursecard img {
     width: 40px;
     height: 40px;
+
 }
+
+
+/* Course Progres End*/
+
+/* Code Challenge */
+.row .codeChalenge {
+    width: 450px;
+    position: absolute;
+    top: 650px;
+    left: 800px;
+
+}
+
+.row .codeChalenge img {
+    height: 210px;
+    width: 420px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Code Challenge End*/

@@ -12,30 +12,16 @@
       box-sizing: border-box
   }
 
-  @media (prefers-reduced-motion:no-preference) {
-      :root {
-          scroll-behavior: smooth
-      }
-  }
-
   body {
       margin: 0;
 
   }
 
 
-  #sidebar.active .sidebar-wrapper {
-      left: 0
-  }
 
-  #sidebar:not(.active) .sidebar-wrapper {
-      left: -300px
-  }
 
-  #sidebar:not(.active)~#main {
-      margin-left: 0;
 
-  }
+
 
   .sidebar-wrapper {
       background-color: #1A1A1A;
@@ -45,45 +31,22 @@
       position: fixed;
       top: 0;
       transition: left .5s ease-out;
-      width: 300px;
       z-index: 10;
       font-family: 'Inter', sans-serif;
-
   }
 
-  .sidebar-wrapper .sidebar-header .csaLogo img {
-      width: 200px;
-      height: 80px;
+  .sidebar-wrapper .offcanvas .btn-close {
+      color: #3F8CFF;
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      cursor: pointer;
+      margin-left: 280px;
   }
 
-  .sidebar-wrapper .sidebar-header {
-      font-size: 2rem;
-      padding: 2rem 2rem 1rem
-  }
-
-  .sidebar-wrapper .sidebar-header img {
-      height: 1.2rem
-  }
-
-  .sidebar-wrapper .sidebar-toggler.x {
-      display: none;
-      position: absolute;
-      right: 1.75rem;
-      top: .25rem
-  }
-
-  .sidebar-wrapper .menu {
-      margin-top: 2rem;
-      padding: 0 2rem
-  }
-
-  .sidebar-wrapper .menu .sidebar-title {
-      color: #25396f;
-      font-size: 1rem;
-      font-weight: 600;
-      list-style: none;
-      margin: 1.5rem 0 1rem;
-      padding: 0 1rem
+  .offcanvas {
+      background-color: #1F1F1F !important;
+      width: 340px !important;
   }
 
   .sidebar-wrapper .menu .sidebar-link {
@@ -138,91 +101,10 @@
       transition: max-height 2s cubic-bezier(0, .55, .45, 1)
   }
 
-  .sidebar-wrapper .menu .submenu.active {
-      display: block;
-      max-height: 999px
-  }
-
-  .sidebar-wrapper .menu .submenu .submenu-item.active {
-      position: relative
-  }
-
-
-
-  .sidebar-wrapper .menu .submenu .submenu-item a {
-      color: #808191;
-      display: block;
-      font-size: .85rem;
-      font-weight: 600;
-      letter-spacing: .5px;
-      padding: .7rem 2rem;
-      transition: all .3s
-  }
-
-  .sidebar-wrapper .menu .submenu .submenu-item a:hover {
-      color: #808191;
-      margin-left: .3rem
-  }
-
-  .sidebar-backdrop {
-      background-color: rgba(0, 0, 0, .5);
-      height: 100%;
-      left: 0;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 9
-  }
-
-  @media screen and (max-width:1199px) {
-      .sidebar-wrapper {
-          left: -300px;
-          position: absolute
-      }
-
-      .sidebar-wrapper .sidebar-toggler.x {
-          display: block
-      }
-  }
-
-
-  @media (max-width:767px) {
-      .stats-icon {
-          float: left;
-          margin-bottom: .4rem
-      }
-  }
-
-  .burger-btn {
-      display: none
-  }
 
 
   #main {
-      margin-left: 300px;
       padding: 2rem;
       background-color: #1F1F1F;
       color: #FFFFFF;
-
-
-  }
-
-  @media screen and (max-width:1199px) {
-      #main {
-          margin-left: 0
-      }
-  }
-
-  #main.layout-navbar {
-      padding: 0;
-      transition: margin-left .5s ease-out
-  }
-
-  #main.layout-horizontal {
-      margin: 0;
-      padding: 0
-  }
-
-  #main #main-content {
-      padding: 2rem
   }
