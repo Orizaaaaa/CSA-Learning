@@ -2,3 +2,27 @@
     width: 900px;
     height: 500px;
 }
+
+.courseHeader {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    padding: 20px 30px;
+    font-family: 'Inter', sans-serif;
+    width: 1100px;
+}
+
+.container h5 {
+    font-family: 'Inter', sans-serif;
+}
+
+.container .row .col {
+    background-color: #1A1A1A;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    width: 270px;
+    margin-right: 10px;
+}
+
+.container .row .col img {
+    background-size: cover;
+    background-position: center;
+}

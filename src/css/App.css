@@ -18,11 +18,6 @@
   }
 
 
-
-
-
-
-
   .sidebar-wrapper {
       background-color: #1A1A1A;
       bottom: 0;
@@ -45,7 +40,7 @@
   }
 
   .offcanvas {
-      background-color: #1F1F1F !important;
+      background-color: #1A1A1A !important;
       width: 340px !important;
   }
 
@@ -83,7 +78,11 @@
       color: #fff;
   }
 
-
+  .sidebar-wrapper .menu .sidebar-item button {
+      background-color: transparent;
+      border: none;
+      width: 250px;
+  }
 
   .sidebar-wrapper .menu .sidebar-item {
       list-style: none;
