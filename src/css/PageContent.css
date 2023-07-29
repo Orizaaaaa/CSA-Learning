@@ -60,12 +60,9 @@
     border: none;
 }
 
-
-
-
-
-
 /* Learning Card End */
+
+
 
 
 /* Course Progres */
@@ -75,6 +72,7 @@
     padding: 10px;
     border-radius: 20px;
     cursor: pointer;
+
 }
 
 .page-content .row .col .coursecard img {
@@ -103,3 +101,56 @@
 }
 
 /* Code Challenge End*/
+
+/* resvonsive breakpoint */
+@media screen and (max-width:1200px) {
+    .page-content .row .caraosel {
+        width: 580px;
+        height: 370px;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 20px;
+    }
+
+    .page-content .row .caraosel .innercaraosel img {
+        width: 300px;
+    }
+
+    .row .courseProgres {
+        min-width: 100px;
+    }
+
+    .page-content .row .col .coursecard {
+        height: 65px;
+        width: 500px;
+    }
+
+    .row .codeChalenge {
+        width: 450px;
+        position: absolute;
+        top: 620px;
+        left: 720px;
+
+    }
+
+    .row .codeChalenge img {
+        height: 210px;
+        width: 380px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .row .courseProgres h4 {
+        white-space: nowrap;
+    }
+
+}
+
+
+
+/* resvonsive breakpoint end*/
