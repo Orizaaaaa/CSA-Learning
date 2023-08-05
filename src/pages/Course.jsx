@@ -12,35 +12,35 @@ const courseList = [
         location: '/EmailAplication'
     },
     {
-        id: 1,
+        id: 2,
         title: "Belajar Dasar CSS",
         materi: " 20 materi",
         image: "/images/Belajar-Dasar-CSS.png",
         location: '/EmailAplication'
     },
     {
-        id: 1,
+        id: 3,
         title: "Belajar Bootsrap CSS Framework",
         materi: " 5 materi",
         image: "/images/Belajar-Bootstrap-CSS-Framework.jpg",
         location: '/EmailAplication'
     },
     {
-        id: 1,
+        id: 4,
         title: "Belajar Javascript DOM",
         materi: " 5 materi",
         image: "/images/Belajar_JavaScript_DOM.png",
         location: '/EmailAplication'
     },
     {
-        id: 1,
+        id: 5,
         title: "Belajar Javascript OOP",
         materi: " 5 materi",
         image: "/images/Belajar_Konsep_OOP_di_JavaScript.jpg",
         location: '/EmailAplication'
     },
     {
-        id: 1,
+        id: 6,
         title: "Belajar AJAX",
         materi: " 5 materi",
         image: "/images/ajax.png",
@@ -51,29 +51,25 @@ const courseList = [
 
 function Course() {
     return (
+
         <AuthLayout>
-            <div className="courseHeader mx-auto">
+            <section className="course">
                 <img className='mb-4' src="/images/csaLogo.svg" />
                 <p>Kelas online belajar Fullstack web developer from A to Z. Cocok buat yang pengen punya karir bagus, skill dibutuhin industri, gaji tinggi dan bisa bikin web atau aplikasi buat ngembangin bisnis online sendiri.</p>
                 <div className="d-flex mt-5">
                     <People className='mt-1 me-2' />
                     <p  >120 Mahasiswa</p>
                 </div>
-            </div>
-
-            <div class="container">
-                <h2 class="fw-bold text-center mt-5 mb-5">Front End Dasar</h2>
-                <div class="row row-cols-lg-4 row-cols-md-3 row-cols-2 g-2 ">
-
-                    {courseList.map((courseList) => (
-                        <MateriCourse key={courseList.id} title={courseList.title}
-                            materi={courseList.materi} location={courseList.location} image={courseList.image} />
-                    ))}
-
-
-
+                <div className="container mx-auto ">
+                    <h2 className="fw-bold text-center mt-5 mb-5">Front End Dasar</h2>
+                    <div className="row row-cols-lg-4 row-cols-md-3 row-cols-2 g-4 mt-5 ">
+                        {courseList.map((courseList) => (
+                            <MateriCourse key={courseList.id} title={courseList.title}
+                                materi={courseList.materi} location={courseList.location} image={courseList.image} />
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </section>
         </AuthLayout>
     )
 }

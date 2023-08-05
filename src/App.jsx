@@ -4,6 +4,9 @@ import Sidebar from "./pages/Sidebar"
 import Course from "./pages/Course";
 import PhotoGalery from "./pages/PhotoGalery";
 import OnlineStore from "./pages/OnlineStore"
+import ChoiseDivision from "./pages/ChoiseDivison";
+
+
 import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -17,6 +20,8 @@ function App() {
         <Route path="/Course" element={<Course />} />
         <Route path="/PhotoGalery" element={<PhotoGalery />} />
         <Route path="/OnlineStore" element={<OnlineStore />} />
+        <Route path="/ChoiseDivision" element={<ChoiseDivision />} />
+
       </Routes>
     </>
   )

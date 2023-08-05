@@ -1,17 +1,9 @@
 import Sayhai from "../components/Element/SayHai/Sayhai"
-
-import images8 from "../assets/img/images_8.svg"
-import chalenge2 from "../assets/img/chalenge2.jpg"
-import codeigniter from "../assets/img/codeigniter.svg"
-
-import diamond from "../assets/img/diamond.svg"
-import firebase from "../assets/img/firebase.svg"
-import principle from "../assets/img/principle.svg"
-
 import AuthLayout from "../components/Layout/AuthLayout"
 import CaraoselPage from "../components/Fragment/CaraoselPage/CaraoselPage"
 import CourseProgres from "../components/Fragment/CourseProgres/CourseProgres"
 import LearningPath from "../components/Fragment/LearningPath/LearningPath"
+import { caraosel1, Codechalenge, codeigniter, diamond, firebase, principle } from "../image"
 
 
 
@@ -31,11 +23,12 @@ function PageContent() {
                             </div>
 
                             <div className="carousel-inner">
-                                <CaraoselPage condition='active' interval='2000' image={images8} title='Artificial Intelligence for Marketing' >
+                                <CaraoselPage condition='active' interval='2000' image={caraosel1} title='Artificial Intelligence for Marketing' >
                                     Learn how artificial intelligence is reshaping the way marketing is done at both large and small organizations.
                                 </CaraoselPage>
-                                <CaraoselPage condition='active' interval='2000' image={images8} title='Artificial Intelligence for Marketing' >
-                                    Learn how artificial intelligence is reshaping the way marketing is done at both large and small organizations.
+
+                                <CaraoselPage interval='2000' image={caraosel1} title='Artificial Intelligence for Marketing' >
+                                    Learn how Front End is reshaping the way marketing is done at both large and small organizations.
                                 </CaraoselPage>
                             </div>
                         </div>
@@ -73,7 +66,7 @@ function PageContent() {
 
                 <section className="codeChalenge">
                     <h5  >Code Challenge</h5>
-                    <img src={chalenge2} alt="" />
+                    <img src={Codechalenge} alt="" />
                 </section>
 
 

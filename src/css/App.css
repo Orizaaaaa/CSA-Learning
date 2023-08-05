@@ -56,21 +56,25 @@
       transition: all .5s
   }
 
-  .sidebar-wrapper .menu .sidebar-link i,
-  .sidebar-wrapper .menu .sidebar-link svg {
-      color: #7c8db5
-  }
+
 
   .sidebar-wrapper .menu .sidebar-link i:before {
       vertical-align: top
   }
 
   .sidebar-wrapper .menu .sidebar-link span {
-      margin-left: 1rem
+      margin-left: 10px;
+      margin-top: 3px;
+
   }
 
+  .sidebar-wrapper .menu .sidebar-link .iconNavbar {}
+
+
   .sidebar-wrapper .menu .sidebar-link:hover {
-      background-color: #7d90db
+      background-color: #7d90db;
+      color: #fff;
+
   }
 
   .sidebar-wrapper .menu .sidebar-link.active {

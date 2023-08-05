@@ -1,11 +1,9 @@
 import React from 'react';
 import { Speedometer2 } from 'react-bootstrap-icons';
 import { Envelope } from 'react-bootstrap-icons';
-import { ChatDots } from 'react-bootstrap-icons';
 import { Image } from 'react-bootstrap-icons';
 import { PersonBadge } from 'react-bootstrap-icons';
 import { Basket } from 'react-bootstrap-icons';
-import { NavLink } from 'react-router-dom';
 import { X } from 'react-bootstrap-icons';
 import { JournalCode } from 'react-bootstrap-icons';
 import SideBarlist from '../components/Fragment/SideBarlist/SideBarlist';

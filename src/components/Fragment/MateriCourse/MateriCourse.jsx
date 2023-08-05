@@ -5,9 +5,9 @@ import { Display } from 'react-bootstrap-icons'
 function MateriCourse(props) {
     const { image, title, materi, location } = props
     return (
-        <div class="col card p-3 ">
+        <div className="col card p-3 ">
             <NavLink to={location}  >
-                <img src={image} alt="" srcset="" className="w-100 mb-3 rounded-3" />
+                <img src={image} alt="" className="w-100 mb-3 rounded-3" />
             </NavLink>
             <h6> {title}</h6>
             <div className="d-flex ">

@@ -27,6 +27,10 @@
     margin-top: 40px;
 }
 
+.page-content .row .caraosel .innercaraosel aside p {
+    font-family: 'Poppins', sans-serif;
+}
+
 .page-content .row .container .col {
     width: 230px;
 

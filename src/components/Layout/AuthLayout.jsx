@@ -1,5 +1,4 @@
 import React from 'react'
-import Sayhai from '../Element/SayHai/Sayhai'
 import ButtonSidebar from '../Element/ButtonSidebar/ButtonSidebar'
 
 
