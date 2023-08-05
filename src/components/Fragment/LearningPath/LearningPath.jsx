@@ -1,5 +1,4 @@
 import React from 'react'
-import { star1 } from "./image"
 
 function LearningPath(props) {
     const { title, time, student, } = props
