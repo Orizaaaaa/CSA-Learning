@@ -1,0 +1,36 @@
+.ChoiseDivision {
+    display: grid;
+    align-content: center;
+    height: 500px;
+}
+
+.ChoiseDivision .row {
+    display: flex;
+    gap: 200px;
+}
+
+.ChoiseDivision .row .col:nth-child(1) {
+    padding: 30px;
+    max-width: 500px;
+    background-color: #3F8CFF;
+    border-radius: 40px;
+
+}
+
+.ChoiseDivision .row .col:nth-child(2) {
+    padding: 30px;
+    max-width: 500px;
+    background-color: #3F8CFF;
+    border-radius: 40px;
+}
+
+.ChoiseDivision .row .col img {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+figcaption {
+    margin-top: 20px;
+    width: 400px;
+}

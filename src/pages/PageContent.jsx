@@ -3,7 +3,8 @@ import AuthLayout from "../components/Layout/AuthLayout"
 import CaraoselPage from "../components/Fragment/CaraoselPage/CaraoselPage"
 import CourseProgres from "../components/Fragment/CourseProgres/CourseProgres"
 import LearningPath from "../components/Fragment/LearningPath/LearningPath"
-import { caraosel1, Codechalenge, codeigniter, diamond, firebase, principle } from "../image"
+import CodeChalenge from "../components/Fragment/CodeChalenge/codeChalenge"
+import { caraosel1, codeigniter, diamond, firebase, principle } from "../image"
 
 
 
@@ -57,7 +58,7 @@ function PageContent() {
 
                     </div>
                     <div className="container row row-cols-lg-3 row-cols-md-3 row-cols-2 g-2 ">
-                        <LearningPath title='Intro to React.js' time='12 hours of video tutorials' student='423 students' />
+                        <LearningPath title='Intro to React.js' location='/Course' time='12 hours of video tutorials' student='423 students' modalTitle='Intro To React.js' modalDesc='Do You Wont Go To Class React JS' />
                         <LearningPath title='Become a Front-End ' time='8 hours of video tutorials ' student='648 students' />
                         <LearningPath title='Basic Javascript' time='24 hours of video tutorals ' student='562 students' />
                     </div>
@@ -65,8 +66,7 @@ function PageContent() {
                 </section>
 
                 <section className="codeChalenge">
-                    <h5  >Code Challenge</h5>
-                    <img src={Codechalenge} alt="" />
+                    <CodeChalenge />
                 </section>
 
 

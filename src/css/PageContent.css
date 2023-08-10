@@ -104,6 +104,17 @@
     cursor: pointer;
 }
 
+.modalLayout .accordion {
+    box-shadow: none !important;
+}
+
+.modalLayout .modalChalenge ul a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
 /* Code Challenge End*/
 
 /* resvonsive breakpoint */

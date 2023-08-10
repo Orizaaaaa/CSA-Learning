@@ -4,6 +4,7 @@ import App from './App.jsx'
 import '../src/css/App.css'
 import '../src/css/PageContent.css'
 import '../src/css/Course.css'
+import '../src/css/ChoiseDivision.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 import 'bootstrap/dist/js/bootstrap.js'

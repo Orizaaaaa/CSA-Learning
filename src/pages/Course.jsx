@@ -3,6 +3,7 @@ import AuthLayout from '../components/Layout/AuthLayout'
 import MateriCourse from '../components/Fragment/MateriCourse/MateriCourse'
 import { People } from 'react-bootstrap-icons'
 
+
 const courseList = [
     {
         id: 1,
@@ -58,11 +59,13 @@ function Course() {
                 <p>Kelas online belajar Fullstack web developer from A to Z. Cocok buat yang pengen punya karir bagus, skill dibutuhin industri, gaji tinggi dan bisa bikin web atau aplikasi buat ngembangin bisnis online sendiri.</p>
                 <div className="d-flex mt-5">
                     <People className='mt-1 me-2' />
-                    <p  >120 Mahasiswa</p>
+                    <p>120 Mahasiswa</p>
                 </div>
+                <h1 className="fw-bold text-center mt-5 mb-5">DIVISI PEMOGRAMAN</h1>
+
                 <div className="container mx-auto ">
-                    <h2 className="fw-bold text-center mt-5 mb-5">Front End Dasar</h2>
-                    <div className="row row-cols-lg-4 row-cols-md-3 row-cols-2 g-4 mt-5 ">
+                    <h4> 1.  Front End Dasar</h4>
+                    <div className="row row-cols-lg-4 row-cols-md-3 row-cols-2 g-4 ">
                         {courseList.map((courseList) => (
                             <MateriCourse key={courseList.id} title={courseList.title}
                                 materi={courseList.materi} location={courseList.location} image={courseList.image} />
