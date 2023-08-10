@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Codechalenge } from '../../../image'
 import Accordion from 'react-bootstrap/Accordion';
 import Modal from 'react-bootstrap/Modal';
-import ListGroup from 'react-bootstrap/ListGroup';
+
 
 function CodeChalenge() {
     const [lgShow, setLgShow] = useState(false);
@@ -66,8 +66,10 @@ function CodeChalenge() {
                 </div>
             </Modal>
 
-            <h5  >Code Challenge</h5>
-            <img onClick={() => setLgShow(true)} src={Codechalenge} alt="" />
+            <div>
+                <h5>Code Challenge</h5>
+                <img onClick={() => setLgShow(true)} src={Codechalenge} alt="" />
+            </div>
         </>
     )
 }

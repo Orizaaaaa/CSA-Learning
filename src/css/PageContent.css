@@ -38,37 +38,6 @@
 
 /* Caraosel End */
 
-
-/* Learning Card */
-
-
-.page-content .row .lerningcard {
-    background-color: #242731;
-    color: #ffff;
-    height: 210px;
-    width: 210px;
-    border-radius: 20px;
-    font-family: 'Inter', sans-serif;
-}
-
-.page-content .row .lerningcard p {
-    color: #808191;
-}
-
-.page-content .row .lerningcard .mt-4 img:nth-child(2) {
-    margin-left: 67px;
-}
-
-.page-content .row .lerningcard .mt-4 button {
-    background-color: transparent;
-    border: none;
-}
-
-/* Learning Card End */
-
-
-
-
 /* Course Progres */
 .page-content .row .col .coursecard {
     height: 70px;
@@ -88,13 +57,46 @@
 
 /* Course Progres End*/
 
-/* Code Challenge */
-.row .codeChalenge {
-    width: 450px;
-    position: absolute;
-    top: 650px;
-    left: 800px;
 
+
+/* Learning Path */
+
+.learningPath {
+    min-width: 500px;
+}
+
+.page-content .row .lerningcard {
+    background-color: #242731;
+    color: #ffff;
+    height: 210px;
+    width: 210px;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.page-content .row .lerningcard p {
+    color: #808191;
+}
+
+.page-content .row .lerningcard .mt-4 img:nth-child(2) {
+    margin-left: 67px;
+}
+
+.page-content .row .lerningcard .mt-4 button {
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/* Learning Path End */
+
+
+
+/* Code Challenge */
+.codeChalenge {
+    max-width: 500px !important;
 }
 
 .row .codeChalenge img {
@@ -117,8 +119,11 @@
 
 /* Code Challenge End*/
 
+
+
 /* resvonsive breakpoint */
 @media screen and (max-width:1200px) {
+
     .page-content .row .caraosel {
         width: 580px;
         height: 370px;
@@ -134,36 +139,144 @@
         width: 300px;
     }
 
-    .row .courseProgres {
-        min-width: 100px;
-    }
-
     .page-content .row .col .coursecard {
         height: 65px;
-        width: 500px;
     }
 
-    .row .codeChalenge {
-        width: 450px;
-        position: absolute;
-        top: 620px;
-        left: 720px;
 
-    }
-
-    .row .codeChalenge img {
-        height: 210px;
-        width: 380px;
-        border-radius: 20px;
-        cursor: pointer;
-    }
 }
 
 @media screen and (max-width:992px) {
     .row .courseProgres h4 {
+        font-size: 18px;
         white-space: nowrap;
     }
 
+
+    .page-content .row .caraosel {
+        width: 490px;
+        height: 370px;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .page-content .row .caraosel .innercaraosel img {
+        width: 240px;
+        height: 280px;
+    }
+
+    .row .courseProgres .coursecard .my-auto p {
+        font-size: 12px;
+    }
+
+    .row .courseProgres .coursecard .my-auto h6 {
+        font-size: 14px;
+    }
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 18px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 12px;
+    }
+
+    .row .courseProgres {
+        min-width: 310px;
+    }
+}
+
+
+
+@media screen and (max-width:863px) {
+
+    .page-content .row .caraosel .innercaraosel img {
+        width: 360px;
+        height: 290px;
+    }
+
+    .page-content .row .caraosel {
+        margin: auto;
+        width: auto;
+        height: 370px;
+    }
+
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 26px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 16px;
+    }
+
+    .row .courseProgres {
+        min-width: 310px;
+        margin-top: 50px;
+    }
+
+    .row .courseProgres .coursecard .my-auto p {
+        font-size: 16px;
+    }
+
+    .row .courseProgres .coursecard .my-auto h6 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .page-content .row .caraosel .innercaraosel img {
+        width: 270px;
+        height: 290px;
+    }
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 19px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .page-content .row .caraosel .innercaraosel img {
+        width: 220px;
+        height: 290px;
+    }
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 18px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:476px) {
+    .page-content .row .caraosel .innercaraosel img {
+        width: 200px;
+        height: 190px;
+    }
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 14px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 10px;
+    }
+
+    .page-content .row .caraosel {
+        height: 280px;
+
+    }
+
+    .page-content .row .caraosel button {
+        width: 90px;
+        font-size: 10px;
+    }
 }
 
 

@@ -1,9 +1,9 @@
 import React from 'react'
 
 function Button(props) {
-    const { variant = 'btn-dark', title = 'Learn Now' } = props
+    const { variant = 'btn-dark', children = 'Learn Now' } = props
     return (
-        <button className={`btn ${variant}  mt-2`} >{title}</button>
+        <button className={`btn ${variant}  mt-2 text-decoration-none`} >{children}</button>
     )
 }
 

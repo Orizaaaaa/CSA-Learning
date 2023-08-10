@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import { NavLink } from 'react-router-dom';
+import Button from '../../Element/Button';
 
 function LearningPath(props) {
     const { title, time, student, modalTitle, modalDesc, location } = props
@@ -38,15 +39,16 @@ function LearningPath(props) {
                     </Modal.Header>
                     <Modal.Body >{modalDesc}</Modal.Body>
                     <Modal.Footer>
-                        <button onClick={handleClose}>
-                            Close
-                        </button>
 
-                        <button onClick={handleClose}>
-                            <NavLink to={location}>
+                        <Button variant=' btn-danger' onClick={handleClose}>
+                            Close
+                        </Button>
+
+                        <Button onClick={handleClose}>
+                            <NavLink className={"text-decoration-none text-white"} to={location}>
                                 Lern Now
                             </NavLink>
-                        </button>
+                        </Button>
                     </Modal.Footer>
                 </div>
             </Modal>

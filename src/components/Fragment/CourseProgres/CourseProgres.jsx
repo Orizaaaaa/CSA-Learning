@@ -1,5 +1,5 @@
 import React from 'react'
-import { ChevronRight } from 'react-bootstrap-icons'
+
 
 function CourseProgres(props) {
     const { image, title, text } = props
