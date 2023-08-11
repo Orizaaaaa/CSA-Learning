@@ -10,14 +10,14 @@ const courseList = [
         title: "Belajar Dasar HTML",
         materi: " 5 materi",
         image: "/images/Belajar-Dasar-HTML.png",
-        location: '/EmailAplication'
+        location: '/DetailCourse'
     },
     {
         id: 2,
         title: "Belajar Dasar CSS",
         materi: " 20 materi",
         image: "/images/Belajar-Dasar-CSS.png",
-        location: '/EmailAplication'
+        location: '/DetailCourse'
     },
     {
         id: 3,

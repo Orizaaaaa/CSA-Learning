@@ -1,12 +1,12 @@
 .ChoiseDivision {
     display: grid;
     align-content: center;
-    height: 500px;
+    padding: 20px;
 }
 
 .ChoiseDivision .row {
     display: flex;
-    gap: 200px;
+    gap: 100px;
 }
 
 .ChoiseDivision .row .col:nth-child(1) {

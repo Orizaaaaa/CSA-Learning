@@ -122,6 +122,22 @@
 
 
 /* resvonsive breakpoint */
+@media screen and (max-width:1278px) {
+    .row .codeChalenge img {
+        height: 210px;
+        width: 320px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .codeChalenge {
+        max-width: 340px !important;
+    }
+
+
+
+}
+
 @media screen and (max-width:1200px) {
 
     .page-content .row .caraosel {
@@ -142,6 +158,43 @@
     .page-content .row .col .coursecard {
         height: 65px;
     }
+
+
+}
+
+@media screen and (max-width:1122px) {
+
+
+    .learningPath {
+        min-width: 750px !important;
+    }
+
+    .learningPath .container {
+        margin: auto
+    }
+
+    .learningPath .d-flex h5 {
+        margin: auto;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .codeChalenge h5 {
+        display: grid;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    .codeChalenge {
+        margin: auto;
+        max-width: 450px !important;
+    }
+
+    .row .codeChalenge img {
+        height: 270px;
+        width: 450px;
+    }
+
 
 
 }
@@ -225,6 +278,15 @@
 }
 
 @media screen and (max-width:768px) {
+
+    .learningPath {
+        min-width: 500px !important;
+    }
+
+    .learningPath .container {
+        gap: 12px;
+    }
+
     .page-content .row .caraosel .innercaraosel img {
         width: 270px;
         height: 290px;
@@ -237,9 +299,27 @@
     .caraoselPage .carousel .carousel-inner p {
         font-size: 16px;
     }
+
+
+
+
 }
 
 @media screen and (max-width:576px) {
+    .learningPath {
+        min-width: 300px !important;
+
+
+    }
+
+    .learningPath .lerningcard {
+        width: 300px !important;
+    }
+
+    .page-content .row .lerningcard .mt-4 img:nth-child(2) {
+        margin-left: 125px;
+    }
+
     .page-content .row .caraosel .innercaraosel img {
         width: 220px;
         height: 290px;
@@ -251,6 +331,17 @@
 
     .caraoselPage .carousel .carousel-inner p {
         font-size: 14px;
+    }
+
+    .codeChalenge {
+        max-width: 400px !important;
+    }
+
+    .row .codeChalenge img {
+        height: 200px;
+        width: 380px;
+        border-radius: 20px;
+        cursor: pointer;
     }
 }
 
@@ -277,8 +368,110 @@
         width: 90px;
         font-size: 10px;
     }
+
+    .row .caraoselPage .caraosel .carousel-indicators button {
+        width: 20px;
+    }
+
+
 }
 
+@media screen and (max-width:443px) {
+    .page-content .row .caraosel .innercaraosel img {
+        width: 180px;
+        height: 170px;
+    }
 
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 12px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 9px;
+    }
+
+    .row .courseProgres .coursecard .my-auto p {
+        font-size: 16px;
+    }
+
+    .row .courseProgres .coursecard .my-auto h6 {
+        font-size: 18px;
+    }
+
+    .page-content .row .col .coursecard {
+        height: 76px;
+    }
+
+    .codeChalenge {
+        max-width: 300px !important;
+    }
+
+    .row .codeChalenge img {
+        height: 200px;
+        width: 290px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+
+
+}
+
+@media screen and (max-width:398px) {
+    .page-content .row .caraosel .innercaraosel img {
+        width: 170px;
+        height: 130px;
+    }
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 10px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 7px;
+    }
+
+    .page-content .row .caraosel {
+
+        height: 250px;
+    }
+
+    .page-content .row .caraosel button {
+        width: 70px;
+        font-size: 7px;
+    }
+
+    .row .courseProgres .coursecard .my-auto p {
+        font-size: 12px;
+    }
+
+    .row .courseProgres .coursecard .my-auto h6 {
+        font-size: 15px;
+    }
+
+    .courseProgres .coursecard img {
+        height: 30px !important;
+        width: 30px !important;
+    }
+}
+
+@media screen and (max-width:343px) {
+    .page-content .row .caraosel .innercaraosel img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .caraoselPage .carousel .carousel-inner h4 {
+        font-size: 9px;
+    }
+
+    .caraoselPage .carousel .carousel-inner p {
+        font-size: 7px;
+    }
+
+    .page-content .row .caraosel {
+        height: 240px;
+    }
+}
 
 /* resvonsive breakpoint end*/

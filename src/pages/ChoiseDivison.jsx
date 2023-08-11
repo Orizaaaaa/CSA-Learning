@@ -5,9 +5,9 @@ import AuthLayout from '../components/Layout/AuthLayout'
 function ChoiseDivision() {
     return (
         <AuthLayout>
-            <section className="ChoiseDivision">
-                <figure className="row mx-auto my-auto">
-                    <div className="col d-grid justify-content-center" >
+            <section className="ChoiseDivision ">
+                <figure className="row d-flex align-items-center justify-content-center row-cols-lg-2 row-cols-1">
+                    <div className="col  " >
                         <NavLink to='/Course' > <img src="/images/pemrograman.jpg" /></NavLink>
                         <figcaption >
                             <h2 className='text-center' >PROGRAMING</h2>
