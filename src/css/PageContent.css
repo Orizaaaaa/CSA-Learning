@@ -312,12 +312,16 @@
 
     }
 
+    .learningPath .container {
+        justify-content: center;
+    }
+
     .learningPath .lerningcard {
-        width: 300px !important;
+        width: 390px !important;
     }
 
     .page-content .row .lerningcard .mt-4 img:nth-child(2) {
-        margin-left: 125px;
+        margin-left: 190px;
     }
 
     .page-content .row .caraosel .innercaraosel img {
@@ -402,13 +406,21 @@
         height: 76px;
     }
 
+    .learningPath .lerningcard {
+        width: 230px !important;
+    }
+
+    .page-content .row .lerningcard .mt-4 img:nth-child(2) {
+        margin-left: 80px;
+    }
+
     .codeChalenge {
         max-width: 300px !important;
     }
 
     .row .codeChalenge img {
         height: 200px;
-        width: 290px;
+        width: 270px;
         border-radius: 20px;
         cursor: pointer;
     }
@@ -453,6 +465,20 @@
         height: 30px !important;
         width: 30px !important;
     }
+
+    .codeChalenge {
+        display: grid;
+        justify-content: center;
+        max-width: 270px !important;
+
+    }
+
+    .row .codeChalenge img {
+        height: 200px;
+        width: 260px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
 }
 
 @media screen and (max-width:343px) {
@@ -473,5 +499,7 @@
         height: 240px;
     }
 }
+
+@media screen and (max-width:343px) {}
 
 /* resvonsive breakpoint end*/

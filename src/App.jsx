@@ -6,6 +6,7 @@ import PhotoGalery from "./pages/PhotoGalery";
 import OnlineStore from "./pages/OnlineStore"
 import ChoiseDivision from "./pages/ChoiseDivison";
 import DetailCourse from "./pages/DetailCourse";
+import CourseInside from "./pages/CourseInside"
 
 
 import { Routes, Route } from 'react-router-dom';
@@ -23,6 +24,7 @@ function App() {
         <Route path="/OnlineStore" element={<OnlineStore />} />
         <Route path="/ChoiseDivision" element={<ChoiseDivision />} />
         <Route path="/DetailCourse" element={<DetailCourse />} />
+        <Route path="/CourseInside" element={<CourseInside />} />
 
       </Routes>
     </>

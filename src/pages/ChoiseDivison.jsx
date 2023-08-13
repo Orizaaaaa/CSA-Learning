@@ -6,8 +6,8 @@ function ChoiseDivision() {
     return (
         <AuthLayout>
             <section className="ChoiseDivision ">
-                <figure className="row d-flex align-items-center justify-content-center row-cols-lg-2 row-cols-1">
-                    <div className="col  " >
+                <figure className="row d-flex align-items-center justify-content-center row-cols-lg-2  row-cols-1">
+                    <div className="col " >
                         <NavLink to='/Course' > <img src="/images/pemrograman.jpg" /></NavLink>
                         <figcaption >
                             <h2 className='text-center' >PROGRAMING</h2>
@@ -15,8 +15,8 @@ function ChoiseDivision() {
                         </figcaption>
                     </div>
 
-                    <div className="col d-grid justify-content-center  " >
-                        <NavLink><img src="/images/multiMedia.jpg" /></NavLink>
+                    <div className="col" >
+                        <NavLink ><img src="/images/multiMedia.jpg" className='mx-auto' /></NavLink>
                         <figcaption>
                             <h2 className='text-center'>MULTIMEDIA</h2>
                             <p>Multi media kami menggabungkan seni visual, audio, dan interaktif untuk menghasilkan pengalaman luar biasa. Kreativitas bertemu teknologi dalam setiap detail. Kami menggabungkan seni visual, audio, dan interaktif dalam multi media kami.</p>
