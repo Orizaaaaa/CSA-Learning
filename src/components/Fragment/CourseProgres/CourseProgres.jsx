@@ -10,7 +10,6 @@ function CourseProgres(props) {
                 <h6 className="card-title">{title}</h6>
                 <p className="card-text ">{text}</p>
             </div>
-
         </div>
     )
 }
