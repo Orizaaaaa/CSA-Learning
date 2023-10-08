@@ -23,26 +23,13 @@ function Register() {
     }
     console.log(formLogin);
 
-    console.log(errorMsg);
 
-    const handleLogin = (event) => {
-        event.preventDefault();
-        const dummyUser = { email: 'admin@gmail.com', password: 'admin123' };
-
-        if (formLogin.email === dummyUser.email && formLogin.password === dummyUser.password) {
-            localStorage.setItem('user', JSON.stringify(dummyUser));
-            localStorage.setItem('isLoggedIn', true);
-            navigate('/PageContent');
-        } else {
-            setErrorMsg('d-block');
-        }
-    };
     return (
         <>
             <section id="login"  >
                 <div className="d-flex " style={{ minWidth: "30rem" }} >
                     <div className="cardForm card-body  z-3 p-4">
-                        <form onSubmit={handleLogin}>
+                        <form >
                             <h3>Register</h3>
 
                             <div className="mb-3">
@@ -73,7 +60,7 @@ function Register() {
                                 className="btn text-white d-flex  "
 
                             >
-                                Login
+                                Register
                             </button>
 
 
