@@ -8,6 +8,7 @@ import ChoiseDivision from "./pages/ChoiseDivison";
 import DetailCourse from "./pages/DetailCourse";
 import CourseInside from "./pages/CourseInside"
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 
 import { Routes, Route } from 'react-router-dom';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/DetailCourse" element={<DetailCourse />} />
         <Route path="/CourseInside" element={<CourseInside />} />
         <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
 
       </Routes>
     </>

@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import '../css/login.css'
 import FormInput from '../components/Fragment/formInput/FormInput';
-function Login() {
 
+function Register() {
     const navigate = useNavigate();
 
     const [formLogin, setFromLogin] = useState({
+        name: '',
+        nim: '',
         email: '',
-        password: ''
+        noHandphone: '',
+        division: ''
     })
 
     const [errorMsg, setErrorMsg] = useState('d-none')
@@ -34,24 +37,34 @@ function Login() {
             setErrorMsg('d-block');
         }
     };
-
     return (
         <>
             <section id="login"  >
-                <div className="d-flex" >
-                    <div className="card-body z-3 p-4">
+                <div className="d-flex " style={{ minWidth: "30rem" }} >
+                    <div className="card-body  z-3 p-4">
                         <form onSubmit={handleLogin}>
-                            <h3>Login</h3>
+                            <h3>Register</h3>
 
                             <div className="mb-3">
-                                <FormInput htmlFor={'email'} type={'email'} onChange={handleChange} title={'Email Adress'} />
-                                <div id="emailHelp" className="form-text text-black">
-                                    We'll never share your email with anyone else.
-                                </div>
+                                <FormInput htmlFor={'name'} type={'text'} onChange={handleChange} title={'Name'} />
                             </div>
+
                             <div className="mb-3">
-                                <FormInput htmlFor={'password'} type={'password'} onChange={handleChange} title={'Password'} />
+                                <FormInput htmlFor={'nim'} type={'number'} onChange={handleChange} title={'Nim'} />
                             </div>
+
+                            <div className="mb-3">
+                                <FormInput htmlFor={'email'} type={'email'} onChange={handleChange} title={'Email'} />
+
+                            </div>
+
+                            <div className="mb-3">
+                                <FormInput htmlFor={'noHandphone'} type={'number'} onChange={handleChange} title={'Phone Number'} />
+
+                            </div>
+
+
+
                             <div className={` text-danger ${errorMsg}`}>Invalid email or password</div>
 
                             <button
@@ -118,4 +131,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Register
