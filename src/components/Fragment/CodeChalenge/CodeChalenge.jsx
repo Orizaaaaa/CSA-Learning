@@ -12,7 +12,7 @@ function CodeChalenge() {
                 size="lg"
                 show={lgShow}
                 onHide={() => setLgShow(false)}
-                aria-labelledby="example-modal-sizes-title-lg"
+                aria-labelledby="example-modal-sizes-title-lg modal-dialog modal-dialog-centered"
             >
                 <div className="modalLayout">
                     <Modal.Header closeButton>

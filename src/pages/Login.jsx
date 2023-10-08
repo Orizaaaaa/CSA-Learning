@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import '../css/login.css'
+import '../css/loginRegister.css'
 import FormInput from '../components/Fragment/formInput/FormInput';
 function Login() {
 
@@ -39,7 +39,7 @@ function Login() {
         <>
             <section id="login"  >
                 <div className="d-flex" >
-                    <div className="card-body z-3 p-4">
+                    <div className="cardForm card-body z-3 p-4">
                         <form onSubmit={handleLogin}>
                             <h3>Login</h3>
 

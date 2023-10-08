@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-.card-body {
+.cardForm {
     background: var(--glasscolor);
     backdrop-filter: blur(10px);
     border-radius: 10px;
