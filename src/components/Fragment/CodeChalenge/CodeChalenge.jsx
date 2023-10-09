@@ -25,18 +25,18 @@ function CodeChalenge() {
                             <Accordion.Item eventKey="0"  >
                                 <Accordion.Header > <h6>AMATIR</h6> </Accordion.Header>
                                 <Accordion.Body className='modalChalenge' >
-                                    <ul class="list-group">
+                                    <ul className="list-group">
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">Algoritma Pemrograman</li>
+                                            <li className="list-group-item ">Algoritma Pemrograman</li>
                                         </a>
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">Stuktur Data</li>
+                                            <li className="list-group-item ">Stuktur Data</li>
                                         </a>
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">HTML</li>
+                                            <li className="list-group-item ">HTML</li>
                                         </a>
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">CSS</li>
+                                            <li className="list-group-item ">CSS</li>
                                         </a>
                                     </ul>
                                 </Accordion.Body>
@@ -45,18 +45,18 @@ function CodeChalenge() {
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header> <h6>BEGINER</h6> </Accordion.Header>
                                 <Accordion.Body className='modalChalenge'>
-                                    <ul class="list-group">
+                                    <ul className="list-group">
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">Bootsrap</li>
+                                            <li className="list-group-item ">Bootsrap</li>
                                         </a>
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">Javascript</li>
+                                            <li className="list-group-item ">Javascript</li>
                                         </a>
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">Go lang</li>
+                                            <li className="list-group-item ">Go lang</li>
                                         </a>
                                         <a href='https://react-bootstrap.netlify.app/docs/components/list-group/' target='_blank'>
-                                            <li class="list-group-item ">Basic Kotlin</li>
+                                            <li className="list-group-item ">Basic Kotlin</li>
                                         </a>
                                     </ul>
                                 </Accordion.Body>
