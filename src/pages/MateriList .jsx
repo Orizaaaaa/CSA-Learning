@@ -1,57 +1,73 @@
 import React from 'react'
 import AuthLayout from '../components/Layout/AuthLayout'
+import { Link } from 'react-router-dom'
 
 
 function MateriList() {
     return (
         <AuthLayout>
-            <h1 className='text-center' >Belajar dasar HTML</h1>
+            <h4 >Belajar dasar HTML</h4>
 
             <section className="materiList mt-5 d-flex align-items-center">
                 <div className="container">
-                    <div className="row row-cols-auto gap-3">
-                        <div className="col">
-                            <img src="img/projects-1.jpg" alt="" srcset="" className="w-100 mb-3 rounded-3" />
-                            <h5 className="fw-bold">Client Side NFT</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        </div>
 
-                        <div className="col">
-                            <img src="img/projects-2.jpg" alt="" srcset="" className="w-100 mb-3 rounded-3" />
-                            <h5 className="fw-bold">UI UX E- Learning</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora distinctio, excepturi
-                                similique dolor unde voluptate eaque!s.</p>
-                        </div>
-                        <div className="col">
-                            <img src="img/projects-3.jpg" alt="" srcset="" className="w-100 mb-3 rounded-3" />
-                            <h5 className="fw-bold">Aplikasi Absen Sekolah</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora distinctio, excepturi
-                                similique dolor unde voluptate eaque!s.</p>
-                        </div>
-                        <div className="col">
-                            <img src="img/projects-4.jpg" alt="" srcset="" className="w-100 mb-3 rounded-3" />
-                            <h5 className="fw-bold">Aplikasi Absen Sekolah</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora distinctio, excepturi
-                                similique dolor unde voluptate eaque!s.</p>
-                        </div>
-                        <div className="col">
-                            <img src="img/projects-5.jpg" alt="" srcset="" className="w-100 mb-3 rounded-3" />
-                            <h5 className="fw-bold">Logo Website</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora distinctio, excepturi
-                                similique dolor unde voluptate eaque!s.</p>
-                        </div>
-                        <div className="col">
-                            <img src="img/projects-6.jpg" alt="" srcset="" className="w-100 mb-3 rounded-3" />
-                            <h5 className="fw-bold">Logo Website</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora distinctio, excepturi
-                                similique dolor unde voluptate eaque!s.</p>
-                        </div>
+                    <div className="row row-cols-auto gap-3" >
+
+                        <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
+                            <div div className="col p-3" >
+
+                                <h5 className="fw-4">Apa itu HTML</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                            </div>
+                        </Link>
+
+
+                        <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
+                            <div className="col p-3">
+                                <h5 className="fw-4">Semantik Code</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </Link>
+
+                        <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
+                            <div className="col p-3">
+                                <h5 className="fw-4">Image Elements</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </Link>
+
+                        <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
+                            <div className="col p-3">
+
+                                <h5 className="fw-4">Audio & Vidio</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </Link>
+
+                        <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
+                            <div className="col p-3">
+
+                                <h5 className="fw-4">Canvas</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </Link>
+
+                        <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
+                            <div className="col p-3">
+
+                                <h5 className="fw-4">Svg</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                            </div>
+                        </Link>
+
+
                     </div>
                 </div>
-            </section>
+            </section >
 
 
-        </AuthLayout>
+        </AuthLayout >
     )
 }
 

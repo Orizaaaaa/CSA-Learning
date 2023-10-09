@@ -10,42 +10,42 @@ const courseList = [
         title: "Belajar Dasar HTML",
         materi: " 5 materi",
         image: "/images/Belajar-Dasar-HTML.png",
-        location: '/VidioCourse'
+        location: '/Materilist'
     },
     {
         id: 2,
         title: "Belajar Dasar CSS",
         materi: " 20 materi",
         image: "/images/Belajar-Dasar-CSS.png",
-        location: '/VidioCourse'
+        location: '/Materilist'
     },
     {
         id: 3,
         title: "Belajar Bootsrap CSS Framework",
         materi: " 5 materi",
         image: "/images/Belajar-Bootstrap-CSS-Framework.jpg",
-        location: '/EmailAplication'
+        location: '/Materilist'
     },
     {
         id: 4,
         title: "Belajar Javascript DOM",
         materi: " 5 materi",
         image: "/images/Belajar_JavaScript_DOM.png",
-        location: '/EmailAplication'
+        location: '/Materilist'
     },
     {
         id: 5,
         title: "Belajar Javascript OOP",
         materi: " 5 materi",
         image: "/images/Belajar_Konsep_OOP_di_JavaScript.jpg",
-        location: '/EmailAplication'
+        location: '/Materilist'
     },
     {
         id: 6,
         title: "Belajar AJAX",
         materi: " 5 materi",
         image: "/images/ajax.png",
-        location: '/EmailAplication'
+        location: '/Materilist'
     },
 ]
 
