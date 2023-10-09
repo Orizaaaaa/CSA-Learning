@@ -502,4 +502,10 @@
 
 @media screen and (max-width:343px) {}
 
+@media screen and (min-width:1200px) {
+    #main {
+        padding: 10px 120px;
+    }
+}
+
 /* resvonsive breakpoint end*/
