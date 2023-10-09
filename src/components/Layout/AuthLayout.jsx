@@ -3,8 +3,7 @@ import ButtonSidebar from '../Element/ButtonSidebar/ButtonSidebar'
 
 
 
-function AuthLayout(props) {
-    const { children } = props
+function AuthLayout({ children }) {
     return (
         <div id="main" >
             <ButtonSidebar />

@@ -30,7 +30,6 @@ function Sidebar() {
 
                             <SideBarlist title='Dasboard' condition='active' icon={<Speedometer2 />} location='/PageContent' />
                             <SideBarlist title='Course' icon={<JournalCode />} location='/ChoiseDivision' />
-                            <SideBarlist title='Email Application' icon={<Envelope />} location='/EmailAplication' />
                             <SideBarlist title='Photo Gallery' icon={<Image />} location='/PhotoGalery' />
                             <SideBarlist title='CSA Online Store' icon={<Basket />} location="/OnlineStore" />
                             <li className="sidebar-item" >

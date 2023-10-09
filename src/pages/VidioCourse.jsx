@@ -1,7 +1,7 @@
 import React from 'react'
 import AuthLayout from '../components/Layout/AuthLayout'
 //ini adalah halaman yang menampilkan dari detail materi yang telah di klik oleh user
-function DetailCourse() {
+function VidioCourse() {
     return (
 
         <AuthLayout>
@@ -14,4 +14,4 @@ function DetailCourse() {
     )
 }
 
-export default DetailCourse
+export default VidioCourse

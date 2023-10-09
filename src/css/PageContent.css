@@ -505,6 +505,11 @@
 @media screen and (min-width:1200px) {
     #main {
         padding: 10px 120px;
+
+    }
+
+    .page-content {
+        max-width: 1800px;
     }
 }
 

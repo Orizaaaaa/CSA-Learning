@@ -1,12 +1,11 @@
 import PageContent from "./pages/PageContent"
-import EmailAplication from "./pages/EmailAplication";
 import Sidebar from "./pages/Sidebar"
 import Course from "./pages/Course";
 import PhotoGalery from "./pages/PhotoGalery";
 import OnlineStore from "./pages/OnlineStore"
 import ChoiseDivision from "./pages/ChoiseDivison";
-import DetailCourse from "./pages/DetailCourse";
-import CourseInside from "./pages/CourseInside"
+import VidioCourse from "./pages/VidioCourse";
+import MateriList from "./pages/MateriList ";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
@@ -20,13 +19,12 @@ function App() {
       <Routes>
         <Route path="/" element={<PageContent />} />
         <Route path="/PageContent" element={<PageContent />} />
-        <Route path="/EmailAplication" element={<EmailAplication />} />
         <Route path="/Course" element={<Course />} />
         <Route path="/PhotoGalery" element={<PhotoGalery />} />
         <Route path="/OnlineStore" element={<OnlineStore />} />
         <Route path="/ChoiseDivision" element={<ChoiseDivision />} />
-        <Route path="/DetailCourse" element={<DetailCourse />} />
-        <Route path="/CourseInside" element={<CourseInside />} />
+        <Route path="/VidioCourse" element={<VidioCourse />} />
+        <Route path="/Materilist" element={<MateriList />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
 
