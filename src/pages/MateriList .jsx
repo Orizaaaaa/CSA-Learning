@@ -14,13 +14,12 @@ function MateriList() {
                     <div className="row row-cols-auto gap-3" >
 
                         <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
-                            <div div className="col p-3" >
-
+                            <div className="col p-3" >
                                 <h5 className="fw-4">Apa itu HTML</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
                             </div>
                         </Link>
+
 
 
                         <Link to={'/VidioCourse'} style={{ textDecoration: 'none' }}>
