@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import { NavLink } from 'react-router-dom';
 import Button from '../../Element/Button';
+import { menuCard, people, star } from '../../../image';
 
 function LearningPath(props) {
     const { title, time, student, modalTitle, modalDesc, location } = props
@@ -19,9 +20,9 @@ function LearningPath(props) {
                     <div className="mt-4" >
                         <p>{student}</p>
                         <div className="d-flex">
-                            <img src="/images/people1.svg" alt="" />
-                            <img src="/images/star1.svg" alt="" />
-                            <button onClick={handleShow} > <img src="/images/menuCard.svg" alt="" /></button>
+                            <img src={people} alt="" />
+                            <img src={star} alt="" />
+                            <button onClick={handleShow} > <img src={menuCard} alt="" /></button>
                         </div>
                     </div>
                 </div>
