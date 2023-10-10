@@ -122,3 +122,8 @@
       color: #fff;
       font-family: 'Inter', sans-serif;
   }
+
+  .vidioCourse {
+      height: 85vh;
+      width: 85vh;
+  }
