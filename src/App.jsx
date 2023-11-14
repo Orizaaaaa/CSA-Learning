@@ -14,8 +14,6 @@ import { Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Sidebar />
-
       <Routes>
         <Route path="/" element={<PageContent />} />
         <Route path="/PageContent" element={<PageContent />} />
